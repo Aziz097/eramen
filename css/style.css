@@ -248,3 +248,23 @@ footer .line {
     margin: 0 25px 0 25px;
     text-align: center;
 }
+
+/* nyak alma */
+
+.card-price{
+    font-family: 'Satoshi-Bold';
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 54px;
+    color: #715B30;
+    position: relative;
+}
+
+.price-strike{
+    text-decoration: line-through;
+    font-size: 22px;
+    color: #463F108A;
+    position: absolute;
+    top: -30px;
+}
+
