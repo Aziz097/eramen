@@ -301,6 +301,48 @@ h2 {
     margin-right: 12px;
 }
 
+.about img {
+    width: 351px;
+    height: 100%;
+    border-radius: 24px;
+    align-self: center;
+}
+
+.about p {
+    font-family: 'Satoshi-Light';
+    font-size: 32px;
+    line-height: 43px;
+    text-align: justify;
+    color: #311F08;
+    line-height: 1.2;
+}
+
+.about b {
+    font-family: 'Satoshi-Bold';
+}
+
+.about.left h2 {
+    font-family: 'Satoshi-Bold';
+    font-weight: 700;
+    font-size: 48px;
+    color: #311F08;
+}
+
+.about.right h2 {
+    font-family: 'Satoshi-Bold';
+    font-weight: 700;
+    font-size: 48px;
+    color: #311F08;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.about {
+    display: flex;
+    gap: 20px;
+}
+
 /* nyak alma */
 
 .card-price{
