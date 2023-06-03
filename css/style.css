@@ -132,23 +132,49 @@ h1 {
     margin-bottom: 72px;
 }
 
-.card-menu p {
+.card-menu.right .card-title {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.card-menu.left p {
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    text-align: justify;
+    text-align: left;
 
     color: #563F0E;
 }
 
-.menu-left {
+.card-menu.right p {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: right;
+
+    color: #563F0E;
+}
+
+.card-menu.left .menu {
     width: 303px;
     height: auto;
     display: flex;
     background: #1E1E1E;
     border-radius: 32px 0px 0px 32px;
+    align-items: center;
+}
+
+.card-menu.right .menu {
+    width: 303px;
+    height: auto;
+    display: flex;
+    background: #1E1E1E;
+    border-radius: 0px 32px 32px 0px;
     align-items: center;
 }
 
