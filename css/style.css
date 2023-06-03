@@ -263,8 +263,12 @@ footer .line {
 .price-strike{
     text-decoration: line-through;
     font-size: 22px;
-    color: #463F108A;
+    color: rgba(70, 63, 16, 0.54);
     position: absolute;
     top: -30px;
+}
+
+.product-title{
+    margin-bottom: 45px;
 }
 
