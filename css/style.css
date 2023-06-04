@@ -51,6 +51,12 @@ nav .logo {
   margin-left: 48px;
 }
 
+nav .icon {
+  font-size: 48px;
+  margin-right: 48px;
+  display: none;
+}
+
 nav ul {
   float: right;
   margin-right: 18px;
@@ -59,7 +65,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   justify-content: space-around;
-  line-height: 80px;
   margin: 0 5px;
 }
 
@@ -453,6 +458,13 @@ h2 {
 
 /* Responsive */
 @media only screen and (max-width: 1017px) {
+  .nav-responsive {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .card-bundle {
     flex-direction: column;
   }
@@ -472,6 +484,10 @@ h2 {
     align-items: center;
     justify-content: center;
   }
+
+  nav ul {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -482,9 +498,45 @@ h2 {
 }
 
 @media only screen and (max-width: 734px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  nav .icon {
+    float: right;
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    transform: translateY(-1000px);
+    transition: all .4s;
+  }
+
+  nav .responsive {
+    display: flex;
+    transform: translateY(85px);
+  } 
+
+  nav .responsive li{
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 32px 0;
+  }
+
   .card-menu.left {
     flex-direction: column;
   }
+
   .card-menu.right {
     flex-direction: column-reverse;
   }
