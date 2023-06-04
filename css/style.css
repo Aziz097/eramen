@@ -1,452 +1,498 @@
 @font-face {
-    font-family: Satoshi;
-    src: url("../src/font/Satoshi-Regular.otf") format("opentype");
+  font-family: Satoshi;
+  src: url("../src/font/Satoshi-Regular.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Satoshi-Light;
-    src: url("../src/font/Satoshi-Light.otf") format("opentype");
+  font-family: Satoshi-Light;
+  src: url("../src/font/Satoshi-Light.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Satoshi-Bold;
-    font-weight: bold;
-    src: url("../src/font/Satoshi-Bold.otf") format("opentype");
+  font-family: Satoshi-Bold;
+  font-weight: bold;
+  src: url("../src/font/Satoshi-Bold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: Satoshi-Medium;
-    font-weight: medium;
-    src: url("../src/font/Satoshi-Medium.otf") format("opentype");
+  font-family: Satoshi-Medium;
+  font-weight: medium;
+  src: url("../src/font/Satoshi-Medium.otf") format("opentype");
 }
 
 @font-face {
-    font-family: hiromisake;
-    src: url(../src/font/hiromisake.ttf);
+  font-family: hiromisake;
+  src: url(../src/font/hiromisake.ttf);
 }
-
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 nav {
-    background-color: #ffffff;
-    height: 210px;
-    width: 100%;
-    border-radius: 0 0 32px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  height: 210px;
+  width: 100%;
+  border-radius: 0 0 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.25);
 }
 
 nav .logo {
-    width: 193.52px;
-    height: 108.32px;
-    margin-left: 48px;
+  width: 193.52px;
+  height: 108.32px;
+  margin-left: 48px;
 }
 
 nav ul {
-    float: right;
-    margin-right: 18px;
+  float: right;
+  margin-right: 18px;
 }
 
 nav ul li {
-    display: inline-block;
-    justify-content: space-around;
-    line-height: 80px;
-    margin: 0 5px;
+  display: inline-block;
+  justify-content: space-around;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
 nav ul li a {
-    color: #563F0E;
-    font-size: 17px;
-    border-radius: 3px;
-    margin: 0 25px 0 25px;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  color: #563f0e;
+  font-size: 17px;
+  border-radius: 3px;
+  margin: 0 25px 0 25px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .content {
-    margin: 35px 62px 35px 62px;
+  margin: 35px 62px 35px 62px;
 }
 
 .card-alert {
-    display: flex;
-    background: #C82C27;
-    box-shadow: 0px 13px 28px 7px rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
-    padding: 20px 40px 20px 40px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background: #c82c27;
+  box-shadow: 0px 13px 28px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  padding: 20px 40px 20px 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-title {
-    font-family: 'Satoshi-Bold';
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 54px;
-    color: #715B30;
+  font-family: "Satoshi-Bold";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px;
+  color: #715b30;
 }
 
 .yellow {
-    color: #FFCF33;
+  color: #ffcf33;
 }
 
 .card-alert p {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: justify;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: justify;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-alert img {
-    margin-left: 18px;
+  margin-left: 18px;
 }
 
 .line {
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 95%;
-    border: 1px solid #C7B57B;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 95%;
+  border: 1px solid #c7b57b;
 }
 
 h1 {
-    font-family: hiromisake;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 64px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #563F0E;
-    margin-top: 12px;
-    margin-bottom: 12px;
+  font-family: hiromisake;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #563f0e;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .card-menu {
-    display: flex;
-    border: 4px solid #C7B57B;
-    border-radius: 32px;
-    margin-bottom: 72px;
-    width: 100%;
-    height: 303px;
+  display: flex;
+  border: 4px solid #c7b57b;
+  border-radius: 32px;
+  margin-bottom: 72px;
+  width: 100%;
+  min-height: 303px;
+  height: auto;
 }
 
 .card-menu.right .card-title {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
 }
 
 .card-menu.left p {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: left;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
 
-    color: #563F0E;
+  color: #563f0e;
 }
 
 .card-menu.right p {
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: right;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
 
-    color: #563F0E;
+  color: #563f0e;
 }
 
 .card-menu.left .menu {
-    width: 303px;
-    height: auto;
-    display: flex;
-    background: #1E1E1E;
-    border-radius: 32px 0px 0px 32px;
-    align-items: center;
+  width: 303px;
+  height: auto;
+  display: flex;
+  background: #1e1e1e;
+  border-radius: 32px 0px 0px 32px;
+  align-items: center;
 }
 
 .card-menu.right .menu {
-    width: 303px;
-    height: auto;
-    display: flex;
-    background: #1E1E1E;
-    border-radius: 0px 32px 32px 0px;
-    align-items: center;
+  width: 303px;
+  height: auto;
+  display: flex;
+  background: #1e1e1e;
+  border-radius: 0px 32px 32px 0px;
+  align-items: center;
 }
 
 .card-menu img {
-    width: 200px;
-    height: 200px;
-    margin: 12px;
+  width: 200px;
+  height: 200px;
+  margin: 12px;
 }
 
 .menu-content {
-    margin: 18px;
+  margin: 18px;
 }
 
 footer {
-    width: 100%;
-    height: 250px;
-    bottom: 0;
-    background: #1E1E1E;
-    border-radius: 32px 32px 0 0;
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+  background: #1e1e1e;
+  border-radius: 32px 32px 0 0;
 }
 
 .media-social {
-    display: flex;
-    justify-content: center;
-    padding-top: 86px;
+  display: flex;
+  justify-content: center;
+  padding-top: 86px;
 }
 
-.media-social i{
-    font-size: 35px;
-    color: white;
-    margin: 0 8px 0 8px;
-    cursor: pointer;
+.media-social i {
+  font-size: 35px;
+  color: white;
+  margin: 0 8px 0 8px;
+  cursor: pointer;
 }
 
 footer .line {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12px;
 }
 
 .footer-content li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .footer-content p {
-    font-family: Satoshi-Medium;
-    font-weight: medium;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #C7B57B;
+  font-family: Satoshi-Medium;
+  font-weight: medium;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #c7b57b;
 }
 
 .footer-content li a {
-    color: #C7B57B;
-    font-family: 'Satoshi';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    margin: 0 25px 0 25px;
-    text-align: center;
+  color: #c7b57b;
+  font-family: "Satoshi";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 25px 0 25px;
+  text-align: center;
 }
 
 .card-bundle {
-    display: flex;
-    background: #1E1E1E;
-    box-shadow: 0px 13px 28px 7px rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
-    gap: 18px;
-    padding: 22px 22px 22px 22px;
+  display: flex;
+  background: #1e1e1e;
+  box-shadow: 0px 13px 28px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  gap: 18px;
+  padding: 22px 22px 22px 22px;
 }
 
 .card-bundle img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 h2 {
-    font-family: hiromisake;
-    font-weight: 400;
-    font-size: 64px;
-    color: #C7B57B;
+  font-family: hiromisake;
+  font-weight: 400;
+  font-size: 64px;
+  color: #c7b57b;
 }
 
 .card-bundle p {
-    font-family: 'Satoshi-Light';
-    font-size: 24px;
-    text-align: justify;
-    word-spacing: -2px;
-    line-height: 1;
-    color: #C7B57B;
+  font-family: "Satoshi-Light";
+  font-size: 24px;
+  text-align: justify;
+  word-spacing: -2px;
+  line-height: 1;
+  color: #c7b57b;
 }
 
 .card-bundle b {
-    font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
 }
 
 .payment {
-    display: flex;
-    margin-top: 12px;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  margin-top: 12px;
+  justify-content: end;
+  align-items: center;
 }
 
 .payment p {
-    font-family: 'Satoshi-Bold';
-    margin-right: 12px;
+  font-family: "Satoshi-Bold";
+  margin-right: 12px;
 }
 
 .about img {
-    width: 351px;
-    height: 100%;
-    border-radius: 24px;
-    align-self: center;
+  width: 351px;
+  height: 100%;
+  border-radius: 24px;
+  align-self: center;
 }
 
 .about p {
-    font-family: 'Satoshi-Light';
-    font-size: 32px;
-    line-height: 43px;
-    text-align: justify;
-    color: #311F08;
-    line-height: 1.2;
+  font-family: "Satoshi-Light";
+  font-size: 32px;
+  line-height: 43px;
+  text-align: justify;
+  color: #311f08;
+  line-height: 1.2;
 }
 
 .about b {
-    font-family: 'Satoshi-Bold';
+  font-family: "Satoshi-Bold";
 }
 
 .about.left h2 {
-    font-family: 'Satoshi-Bold';
-    font-weight: 700;
-    font-size: 48px;
-    color: #311F08;
+  font-family: "Satoshi-Bold";
+  font-weight: 700;
+  font-size: 48px;
+  color: #311f08;
 }
 
 .about.right h2 {
-    font-family: 'Satoshi-Bold';
-    font-weight: 700;
-    font-size: 48px;
-    color: #311F08;
-    display: inline-block;
-    width: 100%;
-    text-align: right;
+  font-family: "Satoshi-Bold";
+  font-weight: 700;
+  font-size: 48px;
+  color: #311f08;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
 }
 
 .about {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 /* nyak alma */
 
-.card-price{
-    font-family: 'Satoshi-Bold';
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 54px;
-    color: #715B30;
-    position: relative;
-    top: 5px;
+.card-price {
+  font-family: "Satoshi-Bold";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 54px;
+  color: #715b30;
+  position: relative;
+  top: 5px;
 }
 
-.card-priceright{
-    font-family: 'Satoshi-Bold';
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 54px;
-    color: #715B30;
-    position: relative;
-    text-align: right;
-    display: inline-block;
-    width: 100%;
+.card-priceright {
+  font-family: "Satoshi-Bold";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 54px;
+  color: #715b30;
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
 }
 
-.price-strike{
-    text-decoration: line-through;
-    font-size: 22px;
-    color: rgba(70, 63, 16, 0.54);
-    position: absolute;
-    top: -30px;
+.price-strike {
+  text-decoration: line-through;
+  font-size: 22px;
+  color: rgba(70, 63, 16, 0.54);
+  position: absolute;
+  top: -30px;
 }
 
-.product-title{
-    margin-bottom: 45px;
+.product-title {
+  margin-bottom: 45px;
 }
 
-.contact-title{
-    letter-spacing: 0.35em;
-    margin-bottom: 30px;
+.contact-title {
+  letter-spacing: 0.35em;
+  margin-bottom: 30px;
 }
 
-.contact-label{
-    font-family: 'Satoshi';
-    font-size: 22px;
+.contact-label {
+  font-family: "Satoshi";
+  font-size: 22px;
 }
-.contact-news{
-    font-family: 'Satoshi';
-    font-size: 16px;
+.contact-news {
+  font-family: "Satoshi";
+  font-size: 16px;
 }
-#newsletter{
-    margin-top: 10px;
-
-}
-
-.contact-form input[type=text], .contact-form input[type=email],.contact-form input[type=tel]{
-    background: #D9D9D9;
-    border: none;
-    height: 25px;
-    width: 100%;
+#newsletter {
+  margin-top: 10px;
 }
 
-.contact-form input[type=radio]{
-    background: #D9D9D9;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  background: #d9d9d9;
+  border: none;
+  height: 25px;
+  width: 100%;
+}
+
+.contact-form input[type="radio"] {
+  background: #d9d9d9;
 }
 
 .contact-content {
-    display: flex;
-    gap:20px;
+  display: flex;
+  gap: 20px;
 }
 
-.contact-form{
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 24px;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    gap: 40px;
+.contact-form {
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-p {
-    margin: 0;
+  margin: 0;
 }
 
-.contact-img{
-    width: 30%;
-    max-height: 257px;
-    border-radius: 24px;
-    object-fit: cover;
+.contact-img {
+  width: 30%;
+  max-height: 257px;
+  border-radius: 24px;
+  object-fit: cover;
 }
-
 
 .contact-gender {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-submit {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contact-divide {
+  width: 100%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1017px) {
+  .card-bundle {
+    flex-direction: column;
+  }
+
+  .card-alert {
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  nav ul {
     display: flex;
-    gap :10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.contact-submit{
-    font-size: 20px;
-    margin-top: 5px;
+@media only screen and (max-width: 900px) {
+  .about.left,
+  .about.right {
+    flex-direction: column;
+  }
 }
 
-.contact-divide{
+@media only screen and (max-width: 734px) {
+  .card-menu.left {
+    flex-direction: column;
+  }
+  .card-menu.right {
+    flex-direction: column-reverse;
+  }
+
+  .card-menu.left .menu,
+  .card-menu.right .menu {
     width: 100%;
+    border-radius: 27px 27px 0px 0px;
+    justify-content: center;
+  }
 }
