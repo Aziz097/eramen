@@ -13,8 +13,13 @@
 </head>
 <body>
     <nav>
-        <img class="logo" src="../src/img/logo.png" alt="logo eramen">
-        <ul>
+        <div class="nav-responsive">
+            <img class="logo" src="../src/img/logo.png" alt="logo eramen">
+            <a href="#" class="icon" onclick="toggleFunc()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <ul id="nav-menu">
             <li><a href="home.html">Home</a></li>
             <li><a href="#" class="active">Products</a></li>
             <li><a href="promotions.html">Promotion</a></li>
@@ -104,5 +109,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
