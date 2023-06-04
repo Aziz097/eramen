@@ -421,9 +421,9 @@ h2 {
   width: 100%;
   height: fit-content;
   display: flex;
+  flex-direction: column;
   padding: 20px;
   justify-content: space-between;
-  gap: 40px;
 }
 
 .contact-p {
@@ -432,7 +432,6 @@ h2 {
 
 .contact-img {
   width: 30%;
-  max-height: 257px;
   border-radius: 24px;
   object-fit: cover;
 }
@@ -452,6 +451,7 @@ h2 {
 }
 
 /* Responsive */
+
 @media only screen and (max-width: 1017px) {
   .card-bundle {
     flex-direction: column;
@@ -478,6 +478,92 @@ h2 {
   .about.left,
   .about.right {
     flex-direction: column;
+  }
+
+  .about.left img {
+    align-self: flex-start;
+  }
+  .about.right img {
+    align-self: flex-end;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  nav ul li {
+    line-height: 50px;
+  }
+
+  p {
+    line-height: 1.4 !important;
+  }
+
+  .card-alert p {
+    font-size: 18px;
+  }
+
+  .card-menu.left p,
+  .card-menu.right p {
+    font-size: 18px;
+  }
+
+  .card-price,
+  .card-priceright,
+  .price-strike {
+    font-size: 22px;
+  }
+
+  .card-bundle {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  .card-bundle p {
+    font-size: 20px;
+  }
+
+  .payment p {
+    margin: 0;
+  }
+
+  .payment img {
+    height: 25px;
+    aspect-ratio: 3/2;
+  }
+
+  .bundle-img {
+    padding: 27px 27px 0 27px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .about.left h2,
+  .about.right h2 {
+    font-size: 36px;
+  }
+
+  .bundle-right h2 {
+    text-align: center;
+  }
+
+  .about img {
+    width: 40%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
