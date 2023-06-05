@@ -78,6 +78,11 @@ nav ul li a {
   font-weight: 600;
 }
 
+nav .active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+}
+
 .content {
   margin: 35px 62px 35px 62px;
   min-height: 70vh;
@@ -348,8 +353,6 @@ h2 {
   display: flex;
   gap: 20px;
 }
-
-/* nyak alma */
 
 .card-price {
   font-family: "Satoshi-Bold";
