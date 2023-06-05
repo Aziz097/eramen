@@ -20,10 +20,10 @@
   <body>
     <nav>
       <div class="nav-responsive">
-          <img class="logo" src="../src/img/logo.png" alt="logo eramen">
-          <a href="#" class="icon" onclick="toggleFunc()">
-              <i class="fa-solid fa-bars"></i>
-          </a>
+        <img class="logo" src="../src/img/logo.png" alt="logo eramen" />
+        <a href="#" class="icon" onclick="toggleFunc()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
       <ul id="nav-menu">
         <li><a href="home.html">Home</a></li>
@@ -45,53 +45,80 @@
         <form class="contact-form" name="contactForm" onsubmit="validateForm()">
           <div class="contact-divide">
             <label class="contact-label" for="name">Name:</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <p class="contact-label contact-p">Gender:</p>
-            <div class="contact-gender">
-              <div>
-                <input type="radio" id="male" name="gender" value="male" />
-                <label for="male">male</label><br />
-              </div>
-              <div>
-                <input type="radio" id="female" name="gender" value="female" />
-                <label for="female">female</label><br />
-              </div>
-            </div>
+            <input
+              placeholder="Your Name"
+              type="text"
+              id="name"
+              name="name"
+            /><br />
+
             <label class="contact-label" for="email">Email Address:</label
             ><br />
-            <input type="email" id="email" name="email" /><br />
+            <input
+              placeholder="youremail@email.com"
+              type="email"
+              id="email"
+              name="email"
+            /><br />
             <label class="contact-label" for="phone">Phone Number:</label><br />
-            <input type="text" id="phone" name="phone" /><br />
+            <input
+              placeholder="08123456789"
+              type="text"
+              id="phone"
+              name="phone"
+            /><br />
           </div>
-          <div class="contact-divide">
-            <p class="contact-label contact-p">Preferences:</p>
-            <div class="contact-gender">
+          <div class="contact-divide radio">
+            <div class="radio">
               <div>
-                <input
-                  type="radio"
-                  id="ramen"
-                  name="preference"
-                  value="ramen"
-                />
-                <label for="ramen">ramen</label><br />
+                <p class="contact-label contact-p">Gender:</p>
+                <div class="contact-gender">
+                  <div>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">male</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                    />
+                    <label for="female">female</label><br />
+                  </div>
+                </div>
               </div>
               <div>
-                <input
-                  type="radio"
-                  id="dryramen"
-                  name="preference"
-                  value="dryramen"
-                />
-                <label for="dryramen">dry ramen</label><br />
+                <p class="contact-label contact-p">Preferences:</p>
+                <div class="contact-gender">
+                  <div>
+                    <input
+                      type="radio"
+                      id="ramen"
+                      name="preference"
+                      value="ramen"
+                    />
+                    <label for="ramen">ramen</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="dryramen"
+                      name="preference"
+                      value="dryramen"
+                    />
+                    <label for="dryramen">dry ramen</label><br />
+                  </div>
+                </div>
               </div>
             </div>
-            <label class="contact-label" for="menu">Menu:</label><br />
-            <input type="text" id="menu" name="menu" /> <br />
-            <input type="checkbox" id="newsletter" name="newsletter" />
-            <label class="contact-news" for="newsletter"
-              >Subscribe to our newsletter?</label
-            ><br />
-            <button class="contact-submit" type="submit">Submit</button>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label class="contact-news" for="newsletter"
+                >agree to receive newsletter</label
+              ><br />
+            </div>
+            <button class="contact-submit" type="submit">Accept</button>
           </div>
         </form>
       </div>
