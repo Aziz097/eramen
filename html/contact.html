@@ -42,7 +42,7 @@
 
       <div class="contact-content">
         <img src="../src/img/contactleft.png" class="contact-img" alt="" />
-        <form class="contact-form">
+        <form class="contact-form" name="contactForm" onsubmit="validateForm()">
           <div class="contact-divide">
             <label class="contact-label" for="name">Name:</label><br />
             <input type="text" id="name" name="name" /><br />
@@ -60,8 +60,8 @@
             <label class="contact-label" for="email">Email Address:</label
             ><br />
             <input type="email" id="email" name="email" /><br />
-            <label class="contact-label" for="email">Phone Number:</label><br />
-            <input type="tel" id="email" name="email" />
+            <label class="contact-label" for="phone">Phone Number:</label><br />
+            <input type="text" id="phone" name="phone" /><br />
           </div>
           <div class="contact-divide">
             <p class="contact-label contact-p">Preferences:</p>
